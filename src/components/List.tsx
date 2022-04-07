@@ -52,14 +52,7 @@ const List: React.FC<IProps> = ({ hourly }) => {
     );
   };
 
-  return (
-    <div>
-      {hourly ? dysplayTable() : <p>Loading data...</p>}
-
-      {/* <ul>{renderList()}</ul> */}
-      {/* {hourly ? console.log(hourly.time) : null} */}
-    </div>
-  );
+  return <div>{hourly ? dysplayTable() : <p>Loading data...</p>}</div>;
 };
 
 export default List;
